@@ -20,7 +20,7 @@ app.get('/login',(req,res)=>{
 app.use(express.static('public'));
 app.use(express.urlencoded());
 
-app.listen(3030,()=>{
+app.listen(process.env.PORT || 3030,()=>{
     console.log('Funciono el servidor')
 })
 
